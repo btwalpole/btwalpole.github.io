@@ -203,6 +203,10 @@
   text-decoration: underline;
 }
 
+.footer-credit {
+  color: #444;
+}
+
 .nav-box {
   color: #fff;
 }
