@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For debugging
+* {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+  }
+*/
+  
+.page {
+    display: flex;
+    background-color: rgb(24, 24, 24);
+  }
+
+.nav-bar-container {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    color: rgb(240, 240, 240);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.logo-title-container {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    padding: 10px 10px;
+}
+
+.logo img {
+    object-fit: cover;
+    height: 100px;
+}
+
+.title {
+    display: flex;
+    padding: 10px 30px;
+    font-size: 60px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    border-bottom: 10px solid rgb(24, 24, 24);
+}
+
+.hero {
+    display: flex;
+    width: 100%;
+}
+
+.hero img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.heading-container {
+    display:flex;
+    height: 420px;
+    justify-content: center;
+    background-color: rgb(24, 24, 24);
+    align-items: center;
+    padding-bottom: 50px;
+    flex-direction: column;
+    color: rgb(240, 240, 240);
+    border: 4px solid rgb(24, 24, 24);
+    border-top: 10px solid rgb(24, 24, 24);
+}
+
+.heading {
+    display: flex;
+    font-size: 40px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.subheading {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin: 0 30px;
+    width: 100%;
+    font-family: 'Yusei Magic', sans-serif;
+    text-align: center;
+}
+
+.subheading a {
+    color: rgb(240, 240, 240);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.subheading span {
+    margin-left: -3px;
+    margin-right: 2px;
+    white-space: nowrap;
+}
+
+.heading-container ul {
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.insta-link {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.insta-link img {
+    height: 50px;
+    transition: transform .2s;
+}
+
+.insta-link img:hover {
+    transform: scale(1.25);
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+    color: rgb(240, 240, 240);
+    background-color: rgb(24, 24, 24);
+    font-family: 'Yusei Magic', sans-serif;
+    border: 4px solid rgb(24, 24, 24);
+  }
+  
+    .photo-grid {
+    width: 1800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    .photo-grid-item {
+    height: 325px;
+    width: 400px;
+    padding: 0 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    .product-name {
+        font-size: 23px;
+        font-family: 'Yusei Magic', sans-serif;
+}
+  
+    .photo-grid-item img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;  
+    }
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    .nav-bar-container {
+        padding: 5px 5px;
+    }
+    
+    .title {
+        font-size: 20px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .logo img {
+        object-fit: cover;
+        height: 40px;
+        padding: 0 0;
+    }
+
+    .heading-container {
+        height: 500px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .heading-container ul {
+        padding: 0 40px;
+        padding-right: 10px;
+    }
+
+    .photo-grid-item {
+        width: 320px;
+        height: 260px;
+    }
+  }
