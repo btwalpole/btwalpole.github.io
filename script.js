@@ -127,13 +127,18 @@ leftButtons.forEach(button => {
 
 /* Zoom and Pan */
 
-const imgs = document.querySelectorAll(".image-container img");
+const imgs = document.querySelectorAll(".photo-grid-item img");
 
 imgs.forEach(img => {
-    addEventListener('mouseover', (e) => {
-        console.log(img);
+    img.addEventListener('mouseover', (e) => {
         img.style.transform = 'scale(1.8)';
-    })
+    });
+    img.addEventListener('mouseout', (e) => {
+        img.style.transform = 'scale(1.0)';
+    });
+    img.addEventListener('mousemove', (e) => {
+        img.style.transformOrigin = (e.pageX - img.offsetLeft) / img.style.width * 100 + '% ' + (e.pageY - img.offsetTop) / img.style.height * 100 + '%';
+    });
 });
 /*
 .on('mouseover', function(){
