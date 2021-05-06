@@ -156,6 +156,7 @@
 .image-container {
     position: relative;
     height: auto;
+    overflow: hidden;
 }
 
 .image-container > button {

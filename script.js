@@ -124,3 +124,25 @@ leftButtons.forEach(button => {
         }
     })
 });
+
+/* Zoom and Pan */
+
+const imgs = document.querySelectorAll(".image-container img");
+
+imgs.forEach(img => {
+    addEventListener('mouseover', (e) => {
+        console.log(img);
+        img.style.transform = 'scale(1.8)';
+    })
+});
+/*
+.on('mouseover', function(){
+  $(this).css({'transform': 'scale(1.4)'});
+})
+.on('mouseout', function(){
+  $(this).css({'transform': 'scale(1)'});
+})
+.on('mousemove', function(e){
+  $(this).css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
+})
+*/
