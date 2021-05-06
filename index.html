@@ -3,7 +3,7 @@
   <head>
     <meta charset='UTF-8'/>
     <title>Gemma Rutter</title>
-    <link rel='stylesheet' href='styles_test.css'/>
+    <link rel='stylesheet' href='styles.css'/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="images/favicon.ico"> 
@@ -25,16 +25,16 @@
                 <div class='hero'>
                   <picture>
                     <source media='(min-width: 851px)'
-                            srcset='images/hero_crop.JPG'/>
+                            srcset='images/dcrop2_fix.jpeg'/>
                     <source media='(max-width: 850px)'
-                            srcset='images/hero_portrait.JPG'/>
+                            srcset='images/d_mobile_fix.jpeg'/>
                     <img src='images/DSCF0035crop2.JPG'/>
                   </picture>
                 </div>
             </div>
 
         <div class='heading-container'> 
-          <div class='heading'>Homemade Masks & Scrunchies</div>
+          <div class='heading'>Handmade Masks & Scrunchies</div>
           <p class='subheading'>Each set is £8 + £2 P&P and includes:</p>
           <ul class='list'>
             <li>Reversible face mask with PM2.5 filter</li>
@@ -51,61 +51,127 @@
         <div class='photo-grid-container'>
           <div class='photo-grid'>
             <div class='photo-grid-item first-item'>
-              <img src='images/beigegreen.jpeg'/>
+              <div class='image-container'>
+                <img data-img-index='0' id='afternoon-tea' src='images/afternoontea.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
               <div class='product-name'>Afternoon Tea</div>
             </div>
             <div class='photo-grid-item'>
-              <img src='images/rainbow-fish.jpeg'/>
+              <div class='image-container'>
+                <img data-img-index='0' id='monet' src='images/monet.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
               <div class='product-name'>Monet</div>
             </div>
             <div class='photo-grid-item'>
-              <img src='images/cherry_blossom.jpeg'/>
-              <div class='product-name'>Cherry Blossom</div>
+              <div id='cherry-blossom' class='image-container'>
+                <img data-img-index='0' id='cherry-blossom-blush' src='images/cherryBlossomBlush.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='name-and-button-container'>
+                <div class='product-name'>Cherry Blossom</div>
+                <div class='buttons-container'>
+                  <div class='button blush'>blush</div>
+                  <div class='button scarlet'>scarlet</div>
+                </div>
+              </div>
             </div>
             <div class='photo-grid-item'>
-              <img src='images/lothlorien.jpeg'/>
-              <div class='product-name'>Gecko</div>
+              <img src='images/calypso.jpeg'/>
+              <div class='product-name'>Calypso</div>
             </div>
             <div class='photo-grid-item'>
-              <img src='images/merida_l.jpeg'/>
-              <div class='product-name'>Jane</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/ariel.jpeg'/>
-              <div class='product-name'>Ariel - Blue</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/floral_l.jpeg'/>
-              <div class='product-name'>Ariel - Pastel</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/starfish_l.jpeg'/>
-              <div class='product-name'>Ariel - Red</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/redblack_l.jpeg'/>
-              <div class='product-name'>Dragon</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/sol_l.jpeg'/>
-              <div class='product-name'>Golden Hour</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/powerpuff.jpeg'/>
-              <div class='product-name'>Powerpuff</div>
-            </div>
-            <div class='photo-grid-item'>
-              <img src='images/whitegreen_.jpeg'/>
+              <img src='images/daisy.jpeg'/>
               <div class='product-name'>Daisy</div>
             </div>
             <div class='photo-grid-item'>
-              <img src='images/mask1.jpeg'/>
+              <img src='images/alaska.jpeg'/>
+              <div class='product-name'>Alaska</div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/seville.jpeg'/>
+              <div class='product-name'>Seville</div>
+            </div>
+            <div class='photo-grid-item'>
+              <div class='image-container'>
+                <img data-img-index='0' id='feather' src='images/feather.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='product-name'>Feather</div>
+            </div>
+            <div class='photo-grid-item'>
+              <div class='image-container'>
+                <img data-img-index='0' id='rose' src='images/rose.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='product-name'>Rose</div>
+            </div>
+            <div class='photo-grid-item'>
+              <div class='image-container'>
+                <img data-img-index='0' id='autumn' src='images/autumn.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='product-name'>Autumn</div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/gecko.jpeg'/>
+              <div class='product-name'>Gecko</div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/jane.jpeg'/>
+              <div class='product-name'>Jane</div>
+            </div>
+            <div class='photo-grid-item'>
+              <div id='ariel' class='image-container'>
+                <img data-img-index='0' id='ariel-aqua' src='images/arielAqua.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='name-and-button-container'>
+                <div class='product-name'>Ariel</div>
+                <div class='buttons-container'>
+                  <div class='button blue'>aqua</div>
+                  <div class='button pastel'>pastel</div>
+                  <div class='button red'>red</div>
+                </div>
+              </div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/goldenHour.jpeg'/>
+              <div class='product-name'>Golden Hour</div>
+            </div>
+            <div class='photo-grid-item'>
+              <div class='image-container'>
+                <img data-img-index='0' id='powerpuff' src='images/powerpuffPink.jpeg'/>
+                <button class='right'><span class="arrow arrow-right"></span></button>
+                <button class='left'><span class="arrow arrow-left"></span></button>
+              </div>
+              <div class='product-name'>Powerpuff</div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/xmas.jpeg'/>
               <div class='product-name'>Xmas</div>
             </div>
-
+            <div class='photo-grid-item'>
+              <img src='images/dragon.jpeg'/>
+              <div class='product-name'>Dragon</div>
+            </div>
+            <div class='photo-grid-item'>
+              <img src='images/wildflower.jpeg'/>
+              <div class='product-name'>Wildflower</div>
+            </div>
           </div>
         </div>
         
     </page>
+
+    <script src="script.js"></script> 
   </body>
 </html>
