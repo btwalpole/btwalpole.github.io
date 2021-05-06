@@ -58,9 +58,18 @@ function addBorder(e) {
 buttons.forEach(button => button.addEventListener("click",changeImage));
 buttons.forEach(button => button.addEventListener("click",addBorder));
 
-/*
-* Changing the image (other lining of same colour&pattern) when right/left buttons are clicked
-*/
+/* Storing details of each mask for dynamic display */
+
+let masks = {
+    afternoonTea: {
+        'productName' : 'Afternoon Tea',
+        'initialImage' : images['afternoon-tea'][0],
+        'hasLiningButtons' : true,
+    }
+}
+
+
+/* Object with array of images for each mask*/ 
 
 let images = {
     'afternoon-tea': ['images/afternoontea.jpeg', 'images/afternoonTeaBlush.jpeg', 'images/afternoonTeaHotPink.jpeg'],
@@ -75,6 +84,10 @@ let images = {
     'cherry-blossom-blush': [ 'images/cherryBlossomBlush.jpeg', 'images/cherryBlossomBlushMaroon.jpeg'],
     'cherry-blossom-scarlet': [ 'images/cherryBlossomScarlet.jpeg', 'images/cherryBlossomScarletBlush.jpeg', 'images/cherryBlossomScarletHotPink.jpeg', 'images/cherryBlossomScarletNavy.jpeg'],
 }
+
+/*
+* Changing the image (other lining of same colour&pattern) when right/left buttons are clicked
+*/
 
 const rightButtons = document.querySelectorAll(".image-container > .right");
 const leftButtons = document.querySelectorAll(".image-container > .left");
